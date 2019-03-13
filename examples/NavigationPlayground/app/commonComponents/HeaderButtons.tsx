@@ -8,7 +8,7 @@ export class HeaderButtons extends React.PureComponent {
   render() {
     return (
       <DefaultHeaderButtons
-        color={Platform.OS === 'ios' ? '#037aff' : 'black'}
+        // color={Platform.OS === 'ios' ? '#037aff' : 'black'}
         {...this.props}
       />
     );

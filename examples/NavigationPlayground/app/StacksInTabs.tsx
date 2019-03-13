@@ -29,7 +29,7 @@ class MyNavScreen extends React.Component<Props> {
     const banner = navigation.getParam('banner');
 
     return (
-      <ScrollView style={{ flex: 1 }} navigation={navigation}>
+      <ScrollView style={{ flex: 1 }}>
         <SafeAreaView forceInset={{ horizontal: 'always' }}>
           <SampleText>{banner}</SampleText>
           <Button

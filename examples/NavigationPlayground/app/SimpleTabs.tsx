@@ -24,7 +24,7 @@ const MyNavScreen = ({
   navigation: NavigationScreenProp<NavigationState>;
   banner: string;
 }) => (
-  <ScrollView navigation={navigation} style={{ flex: 1 }}>
+  <ScrollView style={{ flex: 1 }}>
     <SafeAreaView forceInset={{ horizontal: 'always', top: 'always' }}>
       <SampleText>{banner}</SampleText>
       <Button
@@ -52,7 +52,6 @@ const MyListScreen = ({
   navigation: NavigationScreenProp<NavigationState>;
 }) => (
   <FlatList
-    navigation={navigation}
     data={TEXT.split('\n')}
     style={{ paddingTop: 10 }}
     keyExtractor={(item, index) => index.toString()}
